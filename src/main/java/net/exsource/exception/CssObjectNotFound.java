@@ -2,14 +2,14 @@ package net.exsource.exception;
 
 import java.io.Serial;
 
-public class CssParseException extends IllegalArgumentException {
+public class CssObjectNotFound extends IllegalStateException {
 
     @Serial
-    private static final long serialVersionUID = 7002908551463726234L;
+    private static final long serialVersionUID = 3034288555195293967L;
 
     private final String message;
 
-    public CssParseException(String message) {
+    public CssObjectNotFound(String message) {
         this.message = message;
     }
 

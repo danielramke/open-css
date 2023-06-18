@@ -1,14 +1,19 @@
 package net.exsource;
 
+import net.exsource.css.maps.CssClass;
 import net.exsource.openlogger.Logger;
 
 public class Example {
 
-    public static void main(String[] args) {
-        Logger.enableDebug(true);
-        CssConverter cssConverter = new CssConverter();
+    private static final Logger logger = Logger.getLogger();
 
-        cssConverter.parse("big.css");
+    public static void main(String[] args) throws InterruptedException {
+        Logger.enableDebug(false);
+        CssParser parser = new CssParser();
+
+        parser.parse("example.css");
+        CssClass cssClass = parser.getCssClass("tested .love");
+        logger.info(cssClass.getName() + "," + cssClass.bodyAsString());
     }
 
 }

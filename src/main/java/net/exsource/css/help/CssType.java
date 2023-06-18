@@ -1,4 +1,4 @@
-package net.exsource.css;
+package net.exsource.css.help;
 
 import org.jetbrains.annotations.NotNull;
 
