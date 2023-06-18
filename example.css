@@ -1,0 +1,76 @@
+:root {
+
+}
+
+/* This is a commit */
+body {
+    background: aqua;
+    box-shadow: 0 0 10px 0 black;
+    color: rgba(100, 100, 100, 0.95);
+}
+
+/* This is a commit2 */
+.tested {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+/* This is a commit3 */
+#tested-id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+}
+/* This is a commit asdasdasd sdasdsadsadxasfdjffhj daujdhafjadbahdf asfiuhsfuhfghwdgbvahzdbahsd fhasfjuchafgbahfa asifhasfiuhnaujfahjdf */
+.anotherClass {
+    position: absolute;
+    color: beige;
+    opacity: 0.5;
+}
+
+/*
+   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+   ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+   Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+   sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+   Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+*/
+#anotherID {
+    display: flex;
+    flex-direction: column;
+    flex-grow: revert;
+    transition: opacity 2s;
+    border: 1px solid red;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    background-color: black;
+}
+
+@keyframes anime {
+
+}
+
+@media only screen and (max-width: 600px){
+    body {
+
+    }
+
+    .tested {
+
+    }
+
+    #a {
+
+    }
+}

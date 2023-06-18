@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'net.exsource'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+
+    maven {
+        allowInsecureProtocol = true
+        url = 'http://45.138.48.139:8081/repository/maven-public/'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+
+    implementation 'net.exsource:OpenLogger:1.1.0-SNAPSHOT'
+    implementation 'org.jetbrains:annotations:24.0.1'
+
+    testImplementation 'junit:junit:4.13.2'
+}
