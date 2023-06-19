@@ -3,13 +3,7 @@ package net.exsource.css;
 import org.jetbrains.annotations.NotNull;
 
 @SuppressWarnings("unused")
-public class CssValue {
-
-    private final Object value;
-
-    public CssValue(@NotNull Object value) {
-        this.value = value;
-    }
+public record CssValue(@NotNull Object value) {
 
     public String asString() {
         return (String) value;

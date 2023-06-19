@@ -13,7 +13,7 @@ public class Example {
 
         parser.parse("example.css");
         CssClass cssClass = parser.getCssClass("tested .love");
-        logger.info(cssClass.getName() + "," + cssClass.bodyAsString());
+        logger.info(cssClass.getName() + "," + cssClass.getValue("background").asString());
     }
 
 }
