@@ -1,5 +1,6 @@
 package net.exsource;
 
+import net.exsource.css.help.CssAttribute;
 import net.exsource.css.maps.CssClass;
 import net.exsource.openlogger.Logger;
 
@@ -12,8 +13,8 @@ public class Example {
         CssParser parser = new CssParser();
 
         parser.parse("example.css");
-        CssClass cssClass = parser.getCssClass("tested .love");
-        logger.info(cssClass.getName() + "," + cssClass.getValue("background").asString());
+        CssClass cssClass = parser.getCssClass("tested");
+        logger.info(cssClass.getName() + "," + cssClass.getValue(CssAttribute.BORDER).asString());
     }
 
 }

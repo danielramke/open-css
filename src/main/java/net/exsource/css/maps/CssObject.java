@@ -2,6 +2,7 @@ package net.exsource.css.maps;
 
 import net.exsource.css.CssHandle;
 import net.exsource.css.CssValue;
+import net.exsource.css.help.CssAttribute;
 import net.exsource.exception.CssParseException;
 import net.exsource.openlogger.util.ConsoleColor;
 import net.exsource.util.CssUtils;
@@ -60,6 +61,10 @@ public abstract class CssObject implements CssHandle {
             value = entries.get(key);
         }
         return value;
+    }
+
+    public CssValue getValue(@NotNull CssAttribute key) {
+        return getValue(key.getCode());
     }
 
     @Override
